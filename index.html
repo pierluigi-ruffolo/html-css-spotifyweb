@@ -6,17 +6,76 @@
     <title>SPOTIFYWEB</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/response.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- ===========================
-         🔹 Sezione principale dell'app
-         (contenuto centrale / player / navigazione)
-         =========================== -->
-    <main></main>
-    <!-- ===========================
-         🔸 Sezione footer
-         (informazioni, controlli player, link vari)
-         =========================== -->
-    <footer></footer>
+    <div class="wrapper">
+      <!-- ===============================
+           MAIN LAYOUT SECTION
+           (sidebar + content)
+           =============================== -->
+      <main class="flex">
+        <!-- Sidebar fisso -->
+        <div class="scroll-bar pd-10">
+          <div class="flex fl-direc-col just-space-bwt">
+            <div>
+              <div class="logo"></div>
+              <div class="flex mg-top-30 al-item-center">
+                <img class="svg-scroll" src="./img/home.svg" alt="" />
+                <span class="text-scrol-none mg-left-5">home</span>
+              </div>
+              <div class="mg-top-10 flex al-item-center">
+                <img class="svg-scroll" src="./img/search.svg" alt="" />
+                <span class="text-scrol-none mg-left-5">Cerca</span>
+              </div>
+              <div class="mg-top-10 flex al-item-center">
+                <img class="svg-scroll" src="./img/libreria.svg" alt="" />
+                <span class="text-scrol-none mg-left-5">La tua libreria</span>
+              </div>
+              <div class="playlist-none playlist mg-top-20">
+                <p>PLAYLIST</p>
+                <ul>
+                  <li>Crea Playlist</li>
+                  <li>nome playlist</li>
+                  <li>nome playlist</li>
+                  <li>nome playlist</li>
+                  <li>nome playlist</li>
+                  <li>nome playlist</li>
+                  <li>nome playlist</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="box-footer flex al-item-center">
+                <img class="img-footer" src="./img/download.svg" alt="" />
+                <span class="text-footer mg-left-10">Installa app</span>
+              </div>
+              <div class="separator mg-top-10"></div>
+              <div class="box-footer mg-top-10 flex al-item-center">
+                <img class="img-footer" src="./img/profile.svg" alt="" />
+                <span class="text-footer mg-left-10">John Doe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content scrollabile -->
+        <div class="content">
+          <div class="header-main"></div>
+        </div>
+      </main>
+
+      <!-- ===============================
+           FOOTER / PLAYER SECTION
+           (sempre visibile)
+           =============================== -->
+      <footer></footer>
+    </div>
   </body>
 </html>

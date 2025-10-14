@@ -1,6 +1,135 @@
-/* RESET BASE */
+/* ================================================================
+   RESET / GLOBAL STYLES
+   ============================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* ================================================================
+   LAYOUT PRINCIPALE
+   ============================================================== */
+img {
+  max-width: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  /* debug */
+  background-color: rgb(0, 255, 149);
+}
+/* ================================================================
+    SEZIONE MAIN
+   - Occupa tutta la parte visibile tranne il footer
+   ============================================================== */
+body {
+  color: gray;
+}
+main {
+  height: calc(100% - 100px);
+}
+/* ================================================================
+    UTILITIES
+   - Classi riutilizzabili per struttura e layout
+   ============================================================== */
+
+.flex {
+  display: flex;
+}
+
+.fl-direc-col {
+  flex-direction: column;
+  height: 100%;
+}
+.al-item-center {
+  align-items: center;
+}
+.just-space-bwt {
+  justify-content: space-between;
+}
+/* --- Spaziature --- */
+.pd-10 {
+  padding: 10px;
+}
+.mg-10 {
+  margin: 10px;
+}
+.mg-top-10 {
+  margin-top: 10px;
+}
+.mg-top-20 {
+  margin-top: 20px;
+}
+.mg-top-30 {
+  margin-top: 30px;
+}
+
+.mg-left-5 {
+  margin-left: 5px;
+}
+.mg-left-10 {
+  margin-left: 10px;
+}
+
+/* ================================================================
+    SIDEBAR (barra laterale)
+ ============================================================== */
+.scroll-bar {
+  width: 50px;
+  flex-shrink: 0;
+  background-color: #000000;
+  overflow: auto;
+}
+/* Logo nella sidebar */
+.logo {
+  height: 40px;
+  width: 100%;
+  background-image: url(../img/logo-small.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+/* Testo e sezioni nascoste su mobile */
+.text-scrol-none {
+  display: none;
+}
+/* Sezione playlist */
+.playlist ul {
+  list-style: none;
+}
+.playlist-none {
+  display: none;
+}
+.playlist li {
+  margin-top: 10px;
+}
+/* Elementi visibili solo su schermi grandi */
+.text-footer {
+  display: none;
+}
+.separator {
+  border: 1px solid grey;
+  display: none;
+}
+
+/* ================================================================
+   AREA CONTENUTO
+   - Sezione principale della pagina
+   ============================================================== */
+.content {
+  width: 100%;
+  overflow: auto;
+  background-color: #141922;
+}
+.header-main {
+  height: 100px;
+  background-color: #080b12;
+}
+
+/* ================================================================
+    FOOTER 
+ ============================================================== */
+footer {
+  height: 100px;
+  background-color: #282828;
 }

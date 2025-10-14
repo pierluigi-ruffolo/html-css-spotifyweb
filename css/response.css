@@ -3,6 +3,39 @@
    (schermi ≥ 600px)
    =========================== */
 @media screen and (min-width: 600px) {
+  /* Sidebar più ampia e leggibile */
+  .scroll-bar {
+    width: 200px;
+  }
+  /* Logo completo (versione grande) */
+  .logo {
+    background-image: url(../img/logo.svg);
+    width: 100%;
+    background-size: contain;
+  }
+  /* Mostra testo accanto alle icone */
+  .text-scrol-none {
+    display: inline;
+  }
+
+  /* Attiva la sezione playlist */
+  .playlist-none {
+    display: block;
+  }
+  /* Adatta dimensione icone di navigazione */
+  .svg-scroll {
+    width: 30px;
+  }
+  /* Footer-main: mostra testo e separatore */
+  .img-footer {
+    width: 20px;
+  }
+  .text-footer {
+    display: inline;
+  }
+  .separator {
+    display: block;
+  }
 }
 
 /* ===========================
