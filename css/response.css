@@ -1,0 +1,20 @@
+/* ===========================
+   📱 MEDIA QUERY — MOBILE GRANDE
+   (schermi ≥ 600px)
+   =========================== */
+@media screen and (min-width: 600px) {
+}
+
+/* ===========================
+   💻 MEDIA QUERY — TABLET
+   (schermi ≥ 700px)
+   =========================== */
+@media screen and (min-width: 700px) {
+}
+
+/* ===========================
+   🖥️ MEDIA QUERY — DESKTOP
+   (schermi ≥ 1100px)
+   =========================== */
+@media screen and (min-width: 1100px) {
+}
