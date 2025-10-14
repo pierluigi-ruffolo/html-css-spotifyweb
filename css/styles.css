@@ -157,10 +157,12 @@ main {
 }
 .title-main {
   color: white;
-  margin: 10px 20px;
+}
+.box-col-Recentyl {
+  gap: 10px;
 }
 .cl-Recentyl {
-  width: 50%;
+  width: calc((100% - 10px) / 2);
   /* debug */
   height: 200px;
   background-color: rgba(246, 255, 0, 0.277);

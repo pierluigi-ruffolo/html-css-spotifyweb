@@ -54,6 +54,13 @@
   .cl-header-main {
     width: 20%;
   }
+
+  .box-col-Recentyl {
+    justify-content: flex-start;
+  }
+  .cl-Recentyl {
+    width: calc((100% - (3 * 10px)) / 4);
+  }
 }
 
 /* ===========================
@@ -65,7 +72,8 @@
     flex-wrap: nowrap;
   }
   .cl-header-main {
-    width: 15%;
-    margin-left: 10px;
+  }
+  .box-col-Recentyl {
+    flex-wrap: nowrap;
   }
 }
