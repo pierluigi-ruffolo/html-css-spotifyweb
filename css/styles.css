@@ -40,7 +40,9 @@ main {
 .fl-direc-col {
   flex-direction: column;
 }
-
+.gap-10 {
+  gap: 10px;
+}
 .al-item-center {
   align-items: center;
 }
@@ -58,6 +60,9 @@ main {
 .pd-10 {
   padding: 10px;
 }
+.pd-left-10 {
+  padding-left: 10px;
+}
 .mg-10 {
   margin: 10px;
 }
@@ -70,7 +75,9 @@ main {
 .mg-top-30 {
   margin-top: 30px;
 }
-
+.mg-bottom-20 {
+  margin-bottom: 20px;
+}
 .mg-left-5 {
   margin-left: 5px;
 }
@@ -78,6 +85,12 @@ main {
   margin-left: 10px;
 }
 
+.cl-white {
+  color: white;
+}
+.text-align {
+  text-align: center;
+}
 /* ================================================================
     SIDEBAR (barra laterale)
  ============================================================== */
@@ -155,17 +168,20 @@ main {
 .cl-header-main {
   width: 25%;
 }
-.title-main {
-  color: white;
-}
-.box-col-Recentyl {
-  gap: 10px;
-}
+
 .cl-Recentyl {
   width: calc((100% - 10px) / 2);
-  /* debug */
-  height: 200px;
-  background-color: rgba(246, 255, 0, 0.277);
+}
+h3 {
+  font-size: 1rem;
+}
+
+.suggestions-col {
+  width: 30%;
+  max-width: 300px;
+}
+.img-footer-main {
+  border-radius: 50%;
 }
 
 /* ================================================================
