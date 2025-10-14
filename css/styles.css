@@ -15,9 +15,6 @@ img {
 .wrapper {
   width: 100%;
   height: 100vh;
-
-  /* debug */
-  background-color: rgb(0, 255, 149);
 }
 /* ================================================================
     SEZIONE MAIN
@@ -37,17 +34,26 @@ main {
 .flex {
   display: flex;
 }
-
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .fl-direc-col {
   flex-direction: column;
-  height: 100%;
 }
+
 .al-item-center {
   align-items: center;
 }
 .just-space-bwt {
   justify-content: space-between;
 }
+.just-cont-cent {
+  justify-content: center;
+}
+.just-cont-end {
+  justify-content: flex-end;
+}
+
 /* --- Spaziature --- */
 .pd-10 {
   padding: 10px;
@@ -81,6 +87,9 @@ main {
   background-color: #000000;
   overflow: auto;
 }
+.scroll-flex {
+  height: 100%;
+}
 /* Logo nella sidebar */
 .logo {
   height: 40px;
@@ -103,6 +112,10 @@ main {
 .playlist li {
   margin-top: 10px;
 }
+.img-footer-gray {
+  background-color: gray;
+  border-radius: 50%;
+}
 /* Elementi visibili solo su schermi grandi */
 .text-footer {
   display: none;
@@ -124,6 +137,33 @@ main {
 .header-main {
   height: 100px;
   background-color: #080b12;
+  padding-right: 10px;
+}
+.header-main a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+}
+.box-cl-header-main {
+  row-gap: 30px;
+  padding: 20px;
+}
+.cl-header-main {
+  width: 25%;
+}
+.title-main {
+  color: white;
+  margin: 10px 20px;
+}
+.cl-Recentyl {
+  width: 50%;
+  /* debug */
+  height: 200px;
+  background-color: rgba(246, 255, 0, 0.277);
 }
 
 /* ================================================================
