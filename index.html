@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPOTIFYWEB</title>
+
+    <!-- Fogli di stile -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/response.css" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -14,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <div class="wrapper">
       <!-- ===============================
@@ -21,138 +26,199 @@
            (sidebar + content)
            =============================== -->
       <main class="flex">
-        <!-- Sidebar fisso -->
+        <!-- Sidebar fissa -->
         <div class="scroll-bar pd-10">
           <div class="flex fl-direc-col just-space-bwt scroll-flex">
             <div>
               <div class="logo"></div>
+
               <div class="flex mg-top-30 al-item-center">
-                <img class="svg-scroll" src="./img/home.svg" alt="" />
-                <span class="text-scrol-none mg-left-5">home</span>
+                <img class="svg-scroll" src="./img/home.svg" alt="Home" />
+                <span class="text-scrol-none mg-left-5">Home</span>
               </div>
+
               <div class="mg-top-10 flex al-item-center">
-                <img class="svg-scroll" src="./img/search.svg" alt="" />
+                <img class="svg-scroll" src="./img/search.svg" alt="Cerca" />
                 <span class="text-scrol-none mg-left-5">Cerca</span>
               </div>
+
               <div class="mg-top-10 flex al-item-center">
-                <img class="svg-scroll" src="./img/libreria.svg" alt="" />
+                <img
+                  class="svg-scroll"
+                  src="./img/libreria.svg"
+                  alt="Libreria"
+                />
                 <span class="text-scrol-none mg-left-5">La tua libreria</span>
               </div>
+
               <div class="playlist-none playlist mg-top-20">
                 <p>PLAYLIST</p>
                 <ul>
-                  <li>Crea Playlist</li>
-                  <li>nome playlist</li>
-                  <li>nome playlist</li>
-                  <li>nome playlist</li>
-                  <li>nome playlist</li>
-                  <li>nome playlist</li>
-                  <li>nome playlist</li>
+                  <li class="flex al-item-center">
+                    <div class="incon-playlist">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                    Crea Playlist
+                  </li>
+                  <li>Nome playlist</li>
+                  <li>Nome playlist</li>
+                  <li>Nome playlist</li>
+                  <li>Nome playlist</li>
+                  <li>Nome playlist</li>
+                  <li>Nome playlist</li>
                 </ul>
               </div>
             </div>
+
             <div>
               <div class="box-footer flex al-item-center">
-                <img class="img-footer" src="./img/download.svg" alt="" />
+                <img
+                  class="img-footer"
+                  src="./img/download.svg"
+                  alt="Download"
+                />
                 <span class="text-footer mg-left-10">Installa app</span>
               </div>
+
               <div class="separator mg-top-10"></div>
+
               <div class="box-footer mg-top-10 flex al-item-center">
-                <img class="img-footer-gray" src="./img/profile.svg" alt="" />
+                <img
+                  class="img-footer-gray"
+                  src="./img/profile.svg"
+                  alt="Profilo"
+                />
                 <span class="text-footer mg-left-10 cl-white">John Doe</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Content header -->
+        <!-- ===============================
+             CONTENT AREA
+             =============================== -->
         <div class="content">
           <div class="header-main flex al-item-center just-cont-end">
             <a href="#">EFFETTUA L'UPGRADE</a>
           </div>
-          <div class="box-cl-header-main flex flex-wrap just-cont-cent">
-            <div class="cl-header-main">IN EVIDENZA</div>
-            <div class="cl-header-main">PODCAST</div>
-            <div class="cl-header-main">CLASSIFICHE</div>
-            <div class="cl-header-main">GENERI E MOOD</div>
-            <div class="cl-header-main">NUOVE USCITE</div>
-            <div class="cl-header-main mg-left-10">SCOPRI</div>
+
+          <div
+            class="box-cl-header-main flex flex-wrap just-cont-cent container"
+          >
+            <div class="cl-header-main"><a href="#">IN EVIDENZA</a></div>
+            <div class="cl-header-main"><a href="#">PODCAST</a></div>
+            <div class="cl-header-main"><a href="#">CLASSIFICHE</a></div>
+            <div class="cl-header-main"><a href="#">GENERI E MOOD</a></div>
+            <div class="cl-header-main"><a href="#">NUOVE USCITE</a></div>
+            <div class="cl-header-main"><a href="#">SCOPRI</a></div>
           </div>
-          <h1 class="cl-white pd-10">Recentyl played</h1>
+
+          <h1 class="cl-white pd-10">Recently Played</h1>
+
           <div class="flex flex-wrap gap-10 pd-10 box-col-Recentyl">
+            <!-- CARD 1 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
+              <div class="flex al-item-center just-cont-cent position-relative">
                 <img src="./img/metal_lifting.jpg" alt="Metal" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
               <h3 class="text-align cl-white mg-top-10">Heavy Metal</h3>
-              <p class="text-align mg-10">subtitle</p>
+              <p class="text-align mg-10">Subtitle</p>
             </div>
+
+            <!-- CARD 2 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
-                <img src="./img/stranger.jpeg" alt="stranger" />
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/stranger.jpeg" alt="Stranger Things" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
               <h3 class="text-align cl-white mg-top-10">
-                Stranger things, Vol.1 a (Netglix original seriese soundtrack)
+                Stranger Things, Vol.1 (Netflix Original Series Soundtrack)
               </h3>
-              <p class="text-align mg-10">kyle dixon e micheal stein</p>
+              <p class="text-align mg-10">Kyle Dixon & Michael Stein</p>
             </div>
+
+            <!-- CARD 3 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
-                <img src="./img/aquietplace.jpeg" alt="aquietplace" />
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/aquietplace.jpeg" alt="A Quiet Place" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
-              <h3 class="text-align cl-white mg-top-10">Heavy Metal</h3>
-              <p class="text-align mg-10">subtitle</p>
+              <h3 class="text-align cl-white mg-top-10">A Quiet Place</h3>
+              <p class="text-align mg-10">Subtitle</p>
             </div>
+
+            <!-- CARD 4 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
-                <img src="./img/split.jpeg" alt="split" />
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/split.jpeg" alt="Split" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
-              <h3 class="text-align cl-white mg-top-10">Heavy Metal</h3>
-              <p class="text-align mg-10">subtitle</p>
+              <h3 class="text-align cl-white mg-top-10">Split</h3>
+              <p class="text-align mg-10">Subtitle</p>
             </div>
+
+            <!-- CARD 5 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
-                <img src="./img/cure.jpeg" alt="cure" />
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/cure.jpeg" alt="A Cure for Wellness" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
-              <h3 class="text-align cl-white mg-top-10">Heavy Metal</h3>
-              <p class="text-align mg-10">subtitle</p>
+              <h3 class="text-align cl-white mg-top-10">A Cure for Wellness</h3>
+              <p class="text-align mg-10">Subtitle</p>
             </div>
+
+            <!-- CARD 6 -->
             <div class="cl-Recentyl">
-              <div class="flex al-item-center just-cont-cent">
-                <img src="./img/sinister.jpeg" alt="" />
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/sinister.jpeg" alt="Sinister" />
+                <i class="fa-regular fa-circle-play icon"></i>
               </div>
-              <h3 class="text-align cl-white mg-top-10">Heavy Metal</h3>
-              <p class="text-align mg-10">subtitle</p>
+              <h3 class="text-align cl-white mg-top-10">Sinister</h3>
+              <p class="text-align mg-10">Subtitle</p>
             </div>
           </div>
-          <h1 class="pd-10 cl-white">Creato per john doe</h1>
+
+          <h2 class="pd-10 cl-white">Creato per John Doe</h2>
           <p class="pd-left-10">
-            Più ascolti, pù accurati saranno i suggerimenti
+            Più ascolti, più accurati saranno i suggerimenti.
           </p>
-          <div class="flex pd-10 gap-10">
-            <div class="suggestions-col">
-              <div><img src="./img/radar.jpeg" alt="radar" /></div>
+          <div class="flex flex-wrap gap-10 pd-10 box-col-Recentyl">
+            <div class="cl-Recentyl">
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/radar.jpeg" alt="radar" />
+                <i class="fa-regular fa-circle-play icon"></i>
+              </div>
               <h3 class="text-align cl-white mg-top-10">Release Radar</h3>
             </div>
-            <div class="suggestions-col">
-              <div><img src="./img/mixdaily.jpeg" alt="mixdaily" /></div>
-              <h3 class="text-align cl-white mg-top-10">Daily mix 1</h3>
+            <div class="cl-Recentyl">
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/mixdaily.jpeg" alt="mixdaily" />
+                <i class="fa-regular fa-circle-play icon"></i>
+              </div>
+              <h3 class="text-align cl-white mg-top-10">Daily Mix 1</h3>
             </div>
           </div>
-          <h1 class="pd-10 cl-white">Artisti più popolari</h1>
+          <h2 class="pd-10 cl-white">Artisti più popolari</h2>
           <p class="pd-left-10">
-            Più ascolti, pù accurati saranno i suggerimenti
+            Più ascolti, più accurati saranno i suggerimenti.
           </p>
-          <div class="flex pd-10 gap-10">
-            <div class="suggestions-col">
-              <img src="./img/youg.jpeg" alt="youg" class="img-footer-main" />
+          <div class="flex flex-wrap gap-10 pd-10 box-col-Recentyl">
+            <div class="cl-Recentyl">
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img src="./img/youg.jpeg" alt="youg" class="img-main-footer" />
+                <i class="fa-regular fa-circle-play icon"></i>
+              </div>
             </div>
-            <div class="suggestions-col">
-              <img
-                src="./img/einaudi.jpeg"
-                alt="youg"
-                class="img-footer-main"
-              />
+            <div class="cl-Recentyl">
+              <div class="flex al-item-center just-cont-cent position-relative">
+                <img
+                  src="./img/einaudi.jpeg"
+                  alt="einaudi"
+                  class="img-main-footer"
+                />
+                <i class="fa-regular fa-circle-play icon"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -160,9 +226,12 @@
 
       <!-- ===============================
            FOOTER / PLAYER SECTION
-           (sempre visibile)
            =============================== -->
-      <footer></footer>
+      <footer class="flex">
+        <div class="cl-footer-left">a</div>
+        <div class="cl-footer-center">a</div>
+        <div class="cl-footer-right">a</div>
+      </footer>
     </div>
   </body>
 </html>
