@@ -17,6 +17,9 @@
   .text-scrol-none {
     display: inline;
   }
+  .border-bar::before {
+    display: block;
+  }
 
   /* Attiva la sezione playlist */
   .playlist-none {

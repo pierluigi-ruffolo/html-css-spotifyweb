@@ -143,6 +143,21 @@ a {
 .text-scrol-none {
   display: none;
 }
+.border-bar {
+  position: relative;
+}
+
+.border-bar::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 53%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80%;
+  background-color: #1db954;
+  display: none;
+}
 
 .text-scrol-none:hover {
   color: white;
@@ -309,6 +324,7 @@ footer {
 .song:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: white;
 }
 .text-footer-left {
   display: flex;
