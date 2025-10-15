@@ -21,17 +21,23 @@
 
   <body>
     <div class="wrapper">
-      <!-- ===============================
-           MAIN LAYOUT SECTION
-           (sidebar + content)
-           =============================== -->
+      <!-- ================================================================
+         🧱 MAIN LAYOUT
+         - Contiene la sidebar laterale e l’area principale del contenuto
+         ================================================================ -->
       <main class="flex">
-        <!-- Sidebar fissa -->
+        <!-- ================================================================
+           📚 SIDEBAR FISSA
+           - Contiene il logo, la navigazione e la sezione playlist
+           ================================================================ -->
         <div class="scroll-bar pd-10">
           <div class="flex fl-direc-col just-space-bwt scroll-flex">
+            <!-- === Area superiore: Logo + Navigazione === -->
             <div>
+              <!-- Logo Spotify -->
               <div class="logo"></div>
 
+              <!-- Link principali -->
               <div class="flex mg-top-30 al-item-center">
                 <img class="svg-scroll" src="./img/home.svg" alt="Home" />
                 <span class="text-scrol-none mg-left-5">Home</span>
@@ -51,6 +57,7 @@
                 <span class="text-scrol-none mg-left-5">La tua libreria</span>
               </div>
 
+              <!-- Sezione Playlist (visibile solo su desktop) -->
               <div class="playlist-none playlist mg-top-20">
                 <p>PLAYLIST</p>
                 <ul>
@@ -70,7 +77,9 @@
               </div>
             </div>
 
+            <!-- === Area inferiore: Download + Profilo === -->
             <div>
+              <!-- Link per installare l’app -->
               <div class="box-footer flex al-item-center">
                 <img
                   class="img-footer"
@@ -82,6 +91,7 @@
 
               <div class="separator mg-top-10"></div>
 
+              <!-- Profilo utente -->
               <div class="box-footer mg-top-10 flex al-item-center">
                 <img
                   class="img-footer-gray"
@@ -94,18 +104,24 @@
           </div>
         </div>
 
-        <!-- ===============================
-             CONTENT AREA
-             =============================== -->
+        <!-- ================================================================
+           🎧 AREA CONTENUTO PRINCIPALE
+           - Include header, sezioni musicali e liste
+           ================================================================ -->
         <div class="content">
+          <!-- === HEADER (barra superiore fissa) === -->
           <div class="header-main flex al-item-center just-cont-end">
             <a href="#">EFFETTUA L'UPGRADE</a>
           </div>
 
+          <!-- === MENU CATEGORIE === -->
           <div
             class="box-cl-header-main flex flex-wrap just-cont-cent container"
           >
-            <div class="cl-header-main"><a href="#">IN EVIDENZA</a></div>
+            <div class="cl-header-main">
+              <a href="#">IN EVIDENZA</a>
+              <div class="border-green"></div>
+            </div>
             <div class="cl-header-main"><a href="#">PODCAST</a></div>
             <div class="cl-header-main"><a href="#">CLASSIFICHE</a></div>
             <div class="cl-header-main"><a href="#">GENERI E MOOD</a></div>
@@ -113,8 +129,8 @@
             <div class="cl-header-main"><a href="#">SCOPRI</a></div>
           </div>
 
+          <!-- === SEZIONE: Recently Played === -->
           <h1 class="cl-white pd-10">Recently Played</h1>
-
           <div class="flex flex-wrap gap-10 pd-10 box-col-Recentyl">
             <!-- CARD 1 -->
             <div class="cl-Recentyl">
@@ -179,6 +195,7 @@
             </div>
           </div>
 
+          <!-- === SEZIONE: Creato per John Doe === -->
           <h2 class="pd-10 cl-white">Creato per John Doe</h2>
           <p class="pd-left-10">
             Più ascolti, più accurati saranno i suggerimenti.
@@ -191,6 +208,7 @@
               </div>
               <h3 class="text-align cl-white mg-top-10">Release Radar</h3>
             </div>
+
             <div class="cl-Recentyl">
               <div class="flex al-item-center just-cont-cent position-relative">
                 <img src="./img/mixdaily.jpeg" alt="mixdaily" />
@@ -199,6 +217,8 @@
               <h3 class="text-align cl-white mg-top-10">Daily Mix 1</h3>
             </div>
           </div>
+
+          <!-- === SEZIONE: Artisti più popolari === -->
           <h2 class="pd-10 cl-white">Artisti più popolari</h2>
           <p class="pd-left-10">
             Più ascolti, più accurati saranno i suggerimenti.
@@ -210,6 +230,7 @@
                 <i class="fa-regular fa-circle-play icon"></i>
               </div>
             </div>
+
             <div class="cl-Recentyl">
               <div class="flex al-item-center just-cont-cent position-relative">
                 <img
@@ -222,15 +243,75 @@
             </div>
           </div>
         </div>
+        <!-- /content -->
       </main>
 
-      <!-- ===============================
-           FOOTER / PLAYER SECTION
-           =============================== -->
+      <!-- ================================================================
+         🎵 FOOTER / PLAYER SECTION
+         - Contiene copertina brano, controlli e volume
+         ================================================================ -->
       <footer class="flex">
-        <div class="cl-footer-left">a</div>
-        <div class="cl-footer-center">a</div>
-        <div class="cl-footer-right">a</div>
+        <!-- === Colonna Sinistra: info brano e icone === -->
+        <div class="cl-footer-left">
+          <div class="flex box-footer-left just-cont-start">
+            <div class="cl-img-text flex al-item-center just-cont-cent">
+              <img src="./img/sinister.jpeg" alt="" width="40px" />
+            </div>
+
+            <div class="cl-img-text text-footer-left">
+              <h4 class="cl-white">sinister</h4>
+              <p>brano nome</p>
+            </div>
+
+            <div class="cl-img-text text-footer-left">
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- === Colonna Centrale: controlli player === -->
+        <div class="cl-footer-center">
+          <div class="flex fl-direc-col box-footer-center just-cont-around">
+            <!-- Controlli principali -->
+            <div class="col-footer-center flex just-cont-cent volume-icons">
+              <i class="fa-solid fa-shuffle cl-white"></i>
+              <i class="fa-solid fa-backward-step cl-white"></i>
+              <i class="fa-regular fa-play-circle cl-white"></i>
+              <i class="fa-solid fa-forward-step cl-white"></i>
+              <i class="fa-solid fa-rotate-right cl-white"></i>
+            </div>
+
+            <!-- Barra di progresso -->
+            <div class="col-footer-center flex gp-5 al-item-center">
+              <span class="span-bar cl-white">0.25</span>
+              <div class="bar-center">
+                <div class="internal-bar"></div>
+              </div>
+              <span class="span-bar cl-white">4.35</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- === Colonna Destra: (eventualmente volume o impostazioni) === -->
+        <div class="cl-footer-right">
+          <div class="flex box-right-footer just-cont-end">
+            <div class="options flex al-item-center cl-white">
+              <i class="fa-solid fa-list-ul"></i>
+            </div>
+            <div class="screen flex al-item-center cl-white mg-left-5">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div class="volume flex al-item-center cl-white mg-left-5">
+              <i class="fa-solid fa-volume-high"></i>
+              <div class="bar-vol-right">
+                <div class="bar-internal-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
