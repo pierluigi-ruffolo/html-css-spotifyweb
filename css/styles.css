@@ -144,6 +144,11 @@ a {
   display: none;
 }
 
+.text-scrol-none:hover {
+  color: white;
+  cursor: pointer;
+}
+
 /* Playlist */
 .playlist ul {
   list-style: none;
@@ -152,7 +157,10 @@ a {
 .playlist li {
   margin-top: 10px;
 }
-
+.playlist li:hover {
+  color: white;
+  cursor: pointer;
+}
 .incon-playlist {
   padding: 5px;
   background-color: #a3a3a3;
@@ -166,6 +174,10 @@ a {
 }
 .text-footer {
   display: none;
+}
+.text-footer:hover {
+  color: white;
+  cursor: pointer;
 }
 .separator {
   border: 1px solid grey;
@@ -205,6 +217,11 @@ a {
   padding: 10px 30px;
   border-radius: 25px;
   font-size: 0.8rem;
+  margin-right: 10px;
+}
+
+.header-main a:hover {
+  transform: scale(1.2);
 }
 
 .border-green {
@@ -222,6 +239,9 @@ a {
   width: 25%;
   text-align: center;
 }
+.cl-header-main a:hover {
+  color: white;
+}
 
 /* --- Sezione “Recently Played” --- */
 .cl-Recentyl {
@@ -238,14 +258,15 @@ a {
   position: absolute;
   opacity: 0;
   color: white;
-  transition: opacity 0.3s ease;
 }
 
 /* Mostra icona al passaggio del mouse */
 .position-relative:hover .icon {
   opacity: 1;
 }
-
+.position-relative:hover img {
+  filter: brightness(0.5);
+}
 /* Testi contenuti */
 h3 {
   font-size: 1rem;
@@ -285,10 +306,18 @@ footer {
 .cl-img-text {
   width: 30%;
 }
+.song:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .text-footer-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.cl-img-text i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 /* --- Sezione centrale (controlli player) --- */
@@ -301,7 +330,9 @@ footer {
   font-size: 1.5rem;
   margin-left: 20px;
 }
-
+.volume-icons i:hover {
+  transform: scale(1.2);
+}
 /* --- Barra di progresso --- */
 .bar-center {
   width: 90%;
@@ -310,10 +341,13 @@ footer {
   border-radius: 10px;
 }
 .internal-bar {
-  width: 10%;
+  width: 20%;
   height: 6px;
   background-color: white;
   border-radius: 10px;
+}
+.bar-center:hover .internal-bar {
+  background-color: #ace253;
 }
 
 .options,
@@ -340,4 +374,7 @@ footer {
   background-color: white;
   height: 6px;
   border-radius: 10px;
+}
+.bar-vol-right:hover .bar-internal-right {
+  background-color: #ace253;
 }
