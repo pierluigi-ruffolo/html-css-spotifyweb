@@ -1,3 +1,16 @@
+@media screen and (min-width: 400px) {
+  .cl-footer-right {
+    display: none;
+  }
+  .cl-footer-left {
+    display: none;
+  }
+  .cl-footer-center {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
 /* ===========================
    📱 MEDIA QUERY — MOBILE GRANDE
    (schermi ≥ 600px)
@@ -42,6 +55,17 @@
   }
   .cl-header-main {
     margin-right: 30px;
+  }
+  /* footer */
+  .cl-footer-right {
+    display: block;
+  }
+  .cl-footer-left {
+    display: block;
+  }
+  .cl-footer-center {
+    width: 40%;
+    padding: 0;
   }
 }
 
