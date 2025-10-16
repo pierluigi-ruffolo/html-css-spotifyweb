@@ -175,8 +175,8 @@ a {
   color: white;
   cursor: pointer;
 }
-.scoll-name-playlist {
-  height: 280px;
+.scroll-name-playlist {
+  height: calc(100vh - 500px);
   overflow: auto;
   scrollbar-width: none;
 }
