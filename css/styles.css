@@ -366,9 +366,21 @@ footer {
   height: 6px;
   background-color: white;
   border-radius: 10px;
+  position: relative;
 }
 .bar-center:hover .internal-bar {
   background-color: #ace253;
+}
+.bar-center:hover .internal-bar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ace253;
+  border-radius: 50%;
 }
 
 .options,
@@ -395,7 +407,19 @@ footer {
   background-color: white;
   height: 6px;
   border-radius: 10px;
+  position: relative;
 }
 .bar-vol-right:hover .bar-internal-right {
   background-color: #ace253;
+}
+.bar-vol-right:hover .bar-internal-right::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ace253;
+  border-radius: 50%;
 }
