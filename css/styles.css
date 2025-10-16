@@ -165,6 +165,11 @@ a {
 }
 
 /* Playlist */
+.playlist {
+  height: 300px;
+  overflow: auto;
+  scrollbar-width: none;
+}
 .playlist ul {
   list-style: none;
 }
@@ -172,7 +177,7 @@ a {
 .playlist li {
   margin-top: 10px;
 }
-.playlist li:hover {
+.playlist li:hover a {
   color: white;
   cursor: pointer;
 }
@@ -251,8 +256,8 @@ a {
   padding: 20px;
 }
 .cl-header-main {
-  width: 25%;
   text-align: center;
+  margin-right: 20px;
 }
 .cl-header-main a:hover {
   color: white;
