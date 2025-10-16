@@ -171,7 +171,7 @@ a {
 .playlist li {
   margin-top: 10px;
 }
-.playlist li:hover a {
+.playlist a:hover {
   color: white;
   cursor: pointer;
 }
@@ -215,7 +215,7 @@ a {
 .content {
   overflow: auto;
   background-color: #141922;
-  width: 100%;
+  width: calc(100% - 50px);
 }
 
 /* --- Header fisso con pulsante Upgrade --- */
