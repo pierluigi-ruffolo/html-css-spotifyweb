@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  height: calc(100% - 100px); /* occupa tutto tranne il footer */
+  height: calc(100vh - 100px);
 }
 
 a {
@@ -176,7 +176,7 @@ a {
   cursor: pointer;
 }
 .scroll-name-playlist {
-  height: calc(100vh - 500px);
+  height: calc(100vh - 550px);
   overflow: auto;
   scrollbar-width: none;
 }
